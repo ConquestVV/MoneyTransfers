@@ -1,9 +1,9 @@
 fun main() {
-    val likes = 61
+    val likes = 81
 
-    var cost = (likes - 1) / 10
+    var cost = likes%10
     var message = "Naravitsya $likes ludyam"
-    if (likes === cost * 10 + 1) {
+    if (cost === 1) {
         message = "Nravitsya $likes cheloveku"
     }
     println(message)
